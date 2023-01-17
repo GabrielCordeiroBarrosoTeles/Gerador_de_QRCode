@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!--CSS do Bootstrap-->
+        <title>Crie seu QRCode</title>
+        <link rel="stylesheet" href="css/style.css">     
+    </head>
+    <body>
+        <div class="container">
+            <div class="container mt-5" style="background-color: rgba(0, 0, 0, 0.185);color: white;border-radius: 15px;">
+                <div class="card" style="background-color: rgba(0, 0, 0, 0.3);border: 4px solid dodgerblue;border-radius: 10px;">
+                    <div class="card-header" style="text-align: center;background-color: dodgerblue;">
+                        <legend><b>Crie seu QRCode</b></legend>
+                    </div>
+                    <div class="card-body" style="background-color: rgba(0, 0, 0, 0.6);color: white;border: 2px solid rgba(0, 0, 0, 0);border-radius: 3px;">
+                        <fieldset> 
+                            <div style="text-align: center;align-items: center;width: auto;">
+                                <img id="QRCodeImage" width="280px">
+                            </div>
+                            <br>
+                            <label for="message"><b>Digita o link:</b></label>
+                            <br>
+                            <textarea class="input" style="width: 100%;"></textarea>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <br>
+                                <button onclick="GerarQRCode()" class="submit">Gerar QRCode</button>
+                                <br>
+                        </fieldset>
+                            </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
+
